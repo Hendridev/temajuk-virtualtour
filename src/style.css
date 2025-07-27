@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* @font-face{
+    font-family: inter;
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face{
+    font-family: playfair;
+    src: url(../fonts/PlayfairDisplay-Medium.ttf);
+}
+
+@theme{
+    --font-inter: inter;
+    --font-playfair: playfair, "sans-serif";
+} */
+
+.gold{
+    background-color: #E4A837;
+}
