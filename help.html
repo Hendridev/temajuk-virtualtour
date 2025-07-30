@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualtour - Help</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/styles.css">
+</head>
+<body class="bg-gray-900 text-white w-full  relative isolate">
+    <header class="absolute top-0 left-0 right-0 z-20">
+    <!-- navbar -->
+     <nav class="container mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1 items-center">
+            <img src="./resources/logo/Logo PKM  .png" alt="Logo Temajuk" class="w-12 h-12 rounded-full">
+            <a href="#" class="-m-15 p-15 text-2xl font-bold ">
+                Pantai Temajuk
+            </a>
+        </div>
+        <div class="flex lg:hidden">
+            <button id="hamburger-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100">
+                <span class="sr-only">Menu Utama</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="index.html" class="text-lg font-semibold leading-6 hover:text-amber-300 transition-colors">Home</a>
+            <a href="gallery.html" class="text-lg font-semibold leading-6 hover:text-amber-300 transition-colors">Gallery</a>
+            <a href="about.html" class="text-lg font-semibold leading-6 hover:text-amber-300 transition-colors">About</a>
+            <a href="help.html" class="text-lg font-semibold leading-6 text-amber-400 hover:text-amber-300 transition-colors">Help</a>
+        </div>
+     </nav>
+     <!-- navbar end -->
+     <!-- mobile -->
+      <div id="mobile-menu" class="hidden" role="dialog" aria-modal="true">
+        <div id="menu-overlay" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ease-in-out opacity-0"></div>
+        <div id="menu-panel" class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10 transform translate-x-full trainsition-transform duration-300 ease-in-out">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold">Pantai Temajuk</a>
+                <button id="close-button" class="-m-2 5 rounded-md p-2.5 text-gray-300">
+                    <span class="sr-only">Tutup Menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-2 flow-root">
+                <div class="my-6 divide-y divide-gray-500/25">
+                    <div class="space-y-2">
+                        <a href="index.html" class="block rounded-lg py-2 text-base font-semibold leading-7 text-amber-400">Home</a>
+                        <a href="gallery.html" class="block rounded-lg py-2 text-base font-semibold leading-7 hover:bg-gray-800">Gallery</a>
+                        <a href="about.html" class="block rounded-lg py-2 text-base font-semibold leading-7 hover:bg-gray-800">About</a>
+                        <a href="help.html" class="block rounded-lg py-2 text-base font-semibold leading-7 hover:bg-gray-800">Help</a>                
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- mobile end -->
+    </header>
+    <!-- main -->
+    <main class="relative pt-10 pb-16">
+        <div class="container mx-auto px-2 md:px-6 lg:px-8">
+            <div class="p-2 md:p-12 mt-10">
+                <h1 class="text-2xl md:text-3xl font-bold text-center text-amber-400">Panduan Penggunaan</h1>
+                <div class="mt-8 text-gray-300 space-y-6 text-lg leading-relaxed">
+                    <div>
+                        <h2 class="font-semibold text-xl text-white mb-2">1. Masuk ke Halaman Utama</h2>
+                        <p>Setelah membuka website, pengguna akan disambut dengan halaman utama yang menampilkan menu navigasi utama di bagian atas atau samping layar.</p>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-xl text-white mb-2">2. Pilih Menu Utama</h2>
+                        <p>Gunakan salah satu menu berikut untuk memulai:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-2 pl-4">
+                            <li><strong class="font-semibold text-amber-400">Gallery:</strong> Klik untuk melihat berbagai objek wisata. Klik pada objek untuk melihat detail informasi dan visualisasi 3D-nya.</li>
+                            <li><strong class="font-semibold text-amber-400">View Map:</strong> Tampilkan peta 3D kawasan wisata Pantai Temajuk. Gunakan mouse atau jari untuk navigasi.</li>
+                            <li><strong class="font-semibold text-amber-400">Explore:</strong> Masuki mode eksplorasi bebas. Navigasikan lingkungan virtual menggunakan kontrol pada layar.</li>
+                            <li><strong class="font-semibold text-amber-400">Help:</strong> Buka halaman ini untuk melihat panduan lengkap.</li>
+                            <li><strong class="font-semibold text-amber-400">About:</strong> Pelajari latar belakang aplikasi, pengembang, serta teknologi yang digunakan.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-xl text-white mb-2">3. Navigasi Suara dan Visual</h2>
+                        <ul class="list-disc list-inside mt-2 space-y-2 pl-4">
+                            <li> Suara latar dan efek audio akan otomatis menyala jika perangkat mendukung. Pastikan volume perangkat aktif.</li>
+                            <li> Jika suara tidak terdengar, periksa apakah Audio Driver diaktifkan dan browser telah memberikan izin akses audio.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-xl text-white mb-2">4. Kinerja Tampilan 3D</h2>
+                        <ul class="list-disc list-inside mt-2 space-y-2 pl-4">
+                            <li> Website menggunakan OpenGL|ES untuk merender tampilan 3D. Pastikan perangkat memiliki browser yang kompatibel dan mendukung WebGL.</li>
+                            <li> Gunakan koneksi internet stabil untuk memastikan tampilan dan interaksi berjalan lancar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+</html>
