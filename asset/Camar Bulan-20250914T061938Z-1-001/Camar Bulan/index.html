@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pantai Camar Bulan</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../../dist/styles.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+<div id="pano"></div>
+
+<a href="javascript:history.back()" class="absolute rounded-full bottom-10 left-10 z-30 p-12  bg-black/30 backdrop-blur-sm hover:bg-white/20 transition-colors" aria-label="Kembali ke halaman sebelumnya">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+    </svg>
+</a>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-pantai-camar-bulan-1">
+        <li class="text">Pantai Camar Bulan 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-pantai-camar-bulan-2">
+        <li class="text">Pantai Camar Bulan 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-pantai-camar-bulan-3">
+        <li class="text">Pantai Camar Bulan 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-pantai-camar-bulan-4">
+        <li class="text">Pantai Camar Bulan 4</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" >
+
+</a>
+<a href="javascript:void(0)" id="viewDown" >
+
+</a>
+<a href="javascript:void(0)" id="viewLeft" >
+
+</a>
+<a href="javascript:void(0)" id="viewRight" >
+
+</a>
+<a href="javascript:void(0)" id="viewIn" >
+
+</a>
+<a href="javascript:void(0)" id="viewOut" >
+
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

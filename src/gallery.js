@@ -1,9 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
             // Data Lokasi
             const locations = [
-                { title: 'PANTAI TEMAJUK', description: 'Ini adalah fakta yang sudah lama diketahui bahwa seorang pembaca akan terganggu oleh konten halaman yang dapat dibaca saat melihat tata letaknya.', image: './resources/logo/pantai.png' },
-                { title: 'PANTAI CAMAR BULAN', description: 'Berlawanan dengan kepercayaan populer, Lorem Ipsum bukan sekadar teks acak. Ia berakar pada sebuah karya sastra Latin klasik dari 45 SM.', image: './resources/logo/pantai-sore.png' },
-                { title: 'TELUK ATUNG', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.', image: './resources/logo/pantai.png' },
+                { title: 'Batu Nenek', description: 'Ini adalah fakta yang sudah lama diketahui bahwa seorang pembaca akan terganggu oleh konten halaman yang dapat dibaca saat melihat tata letaknya.', 
+                    image: './resources/logo/background.png', 
+                    link:'/asset/Batu Nenek-20250914T061940Z-1-001/Batu Nenek/index.html' },
+                { title: 'Camar Bulan', description: 'Berlawanan dengan kepercayaan populer, Lorem Ipsum bukan sekadar teks acak. Ia berakar pada sebuah karya sastra Latin klasik dari 45 SM.', 
+                    image: './resources/logo/pantai-sore.png'
+                    , link:'asset/Camar Bulan-20250914T061938Z-1-001/Camar Bulan/index.html' },
+                { title: 'Hutan Mangrove', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Hutan Mangrove-20250914T084559Z-1-001/Hutan Mangrove/index.html' },
+                { title: 'JLO', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/JLCO-20250914T074902Z-1-001/JLCO/index.html' },
+                { title: 'Pantai Pak Ping', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Pantai Pak Ping-20250914T074859Z-1-001/Pantai Pak Ping/index.html' },
+                { title: 'Rumah Terbalik', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Rumah Terbalik-20250914T074857Z-1-001/Rumah Terbalik/index.html' },
+                { title: 'Tanjung Datu', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Tanjung Datu-20250914T074854Z-1-001/Tanjung Datu/index.html' },
+                { title: 'Teluk Atong Bahari', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Teluk Atong Bahari-20250914T074854Z-1-001/Teluk Atong Bahari/index.html' },
+                { title: 'Tugu Pancasila', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
+                    , image: './resources/logo/pantai.png'
+                    , link:'/asset/Tugu Pancasila-20250914T061935Z-1-001/Tugu Pancasila/index.html' },
             ];
 
             // DOM
@@ -19,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const reviewLocationName = document.getElementById('review-location-name');
             const starRatingContainer = document.getElementById('star-rating');
             const ratingValueInput = document.getElementById('rating-value');
+            const imagelink = document.getElementById('source_link');
             
             let activeLocationIndex = -1;
 
@@ -32,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     backgroundImage.classList.remove('opacity-0');
                 }, 500);
 
+                imagelink.href = location.link;
                 mainImage.src = location.image;
                 mainTitle.textContent = location.title;
                 mainDescription.textContent = location.description;
