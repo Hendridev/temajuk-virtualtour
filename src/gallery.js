@@ -1,33 +1,60 @@
 document.addEventListener('DOMContentLoaded', function () {
             // Data Lokasi
             const locations = [
-                { title: 'Batu Nenek', description: 'Ini adalah fakta yang sudah lama diketahui bahwa seorang pembaca akan terganggu oleh konten halaman yang dapat dibaca saat melihat tata letaknya.', 
-                    image: './resources/logo/background.png', 
-                    link:'/asset/Batu Nenek-20250914T061940Z-1-001/Batu Nenek/index.html' },
-                { title: 'Camar Bulan', description: 'Berlawanan dengan kepercayaan populer, Lorem Ipsum bukan sekadar teks acak. Ia berakar pada sebuah karya sastra Latin klasik dari 45 SM.', 
-                    image: './resources/logo/pantai-sore.png'
-                    , link:'asset/Camar Bulan-20250914T061938Z-1-001/Camar Bulan/index.html' },
-                { title: 'Hutan Mangrove', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Hutan Mangrove-20250914T084559Z-1-001/Hutan Mangrove/index.html' },
-                { title: 'JLO', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/JLCO-20250914T074902Z-1-001/JLCO/index.html' },
-                { title: 'Pantai Pak Ping', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Pantai Pak Ping-20250914T074859Z-1-001/Pantai Pak Ping/index.html' },
-                { title: 'Rumah Terbalik', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Rumah Terbalik-20250914T074857Z-1-001/Rumah Terbalik/index.html' },
-                { title: 'Tanjung Datu', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Tanjung Datu-20250914T074854Z-1-001/Tanjung Datu/index.html' },
-                { title: 'Teluk Atong Bahari', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Teluk Atong Bahari-20250914T074854Z-1-001/Teluk Atong Bahari/index.html' },
-                { title: 'Tugu Pancasila', description: 'Ada banyak variasi dari bagian-bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk.'
-                    , image: './resources/logo/pantai.png'
-                    , link:'/asset/Tugu Pancasila-20250914T061935Z-1-001/Tugu Pancasila/index.html' },
+            { 
+                title: 'Batu Nenek', 
+                description: 'Batu Nenek adalah sebuah ikon geowisata di Kecamatan Paloh yang memikat pengunjung dengan formasi batu granit raksasa yang secara alami menyerupai siluet seorang wanita tua (nenek). Terletak di tepi pantai, batu ini tidak hanya menawarkan pemandangan eksotis yang berpadu dengan laut, tetapi juga diselimuti oleh berbagai cerita rakyat dan legenda lokal yang dituturkan secara turun-temurun, menambahkan nuansa magis dan misterius bagi para pengunjung.', 
+                image: './resources/logo/background.png', 
+                link:'/asset/Batu Nenek-20250914T061940Z-1-001/Batu Nenek/index.html' 
+            },
+            { 
+                title: 'Camar Bulan', 
+                description: 'Sebagai salah satu titik terluar Indonesia di Kalimantan Barat, Pantai Camar Bulan di Dusun Camar Bulan adalah destinasi yang memadukan keindahan alam dengan nuansa nasionalisme. Pantai ini berhadapan langsung dengan Laut Natuna dan berbatasan darat dengan Malaysia, ditandai oleh Patok A47. Pengunjung dapat menikmati hamparan pasir putih yang luas, air laut yang jernih, serta merasakan sensasi berada di garda terdepan negara sambil menyaksikan matahari terbenam yang spektakuler.', 
+                image: './resources/logo/pantai-sore.png', 
+                link:'asset/Camar Bulan-20250914T061938Z-1-001/Camar Bulan/index.html' 
+            },
+            { 
+                title: 'Hutan Mangrove', 
+                description: 'Kawasan ekowisata Hutan Mangrove di Temajuk ini merupakan paru-paru pesisir yang vital dan menawarkan pengalaman edukatif yang mendalam. Pengunjung dapat berjalan di atas jembatan kayu panjang yang berkelok-kelok di antara rimbunnya pohon bakau, sambil mengamati ekosistem unik yang menjadi rumah bagi berbagai jenis kepiting, ikan, dan burung. Tempat ini sangat ideal untuk pecinta alam yang ingin belajar tentang pentingnya konservasi mangrove sambil menikmati udara segar dan suasana yang tenang.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Hutan Mangrove-20250914T084559Z-1-001/Hutan Mangrove/index.html' 
+            },
+            { 
+                title: 'JLO', 
+                description: 'JLO atau Jembatan Lintas Obyek merupakan sebuah jembatan kayu sederhana yang membentang di atas muara sungai kecil di Temajuk. Meskipun fungsinya sebagai penghubung, JLO telah bertransformasi menjadi sebuah spot favorit bagi wisatawan dan masyarakat lokal untuk bersantai, memancing, atau sekadar menikmati pemandangan perahu nelayan yang lalu-lalang. Dari jembatan ini, pengunjung bisa merasakan atmosfer kehidupan pesisir yang otentik dengan latar belakang pemandangan alam yang indah.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/JLCO-20250914T074902Z-1-001/JLCO/index.html' 
+            },
+            { 
+                title: 'Pantai Pak Ping', 
+                description: 'Pantai Pak Ping dikenal dengan garis pantainya yang panjang dan hamparan pasir putihnya yang sangat halus. Keunikan pantai ini adalah suasananya yang masih alami dan relatif sepi, menjadikannya lokasi yang sempurna untuk melarikan diri dari keramaian. Ombaknya yang tenang membuat pantai ini aman untuk berenang dan bermain air bersama keluarga, sementara deretan pohon kelapa di tepiannya menyediakan tempat berteduh yang nyaman untuk bersantai menikmati angin laut.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Pantai Pak Ping-20250914T074859Z-1-001/Pantai Pak Ping/index.html' 
+            },
+            { 
+                title: 'Rumah Terbalik', 
+                description: 'Rumah Terbalik di Temajuk adalah sebuah atraksi wisata modern dan kreatif yang dirancang khusus untuk para penggemar fotografi. Dengan konsep bangunan dan seluruh perabotan interior yang dipasang terbalik, tempat ini menciptakan ilusi optik yang membingungkan sekaligus menyenangkan. Pengunjung dapat berpose seolah-olah sedang menantang gravitasi, menghasilkan foto-foto yang unik dan layak dibagikan di media sosial, menjadikannya destinasi hiburan yang berbeda dari wisata alam lainnya.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Rumah Terbalik-20250914T074857Z-1-001/Rumah Terbalik/index.html' 
+            },
+            { 
+                title: 'Tanjung Datu', 
+                description: 'Sebagai bagian dari Taman Nasional, Tanjung Datu adalah permata konservasi yang sering disebut sebagai "surga di ujung Kalimantan". Wilayah ini memiliki ekosistem yang lengkap, mulai dari hutan hujan tropis, perbukitan, hingga pantai berpasir putih yang menjadi lokasi pendaratan dan peneluran penyu. Kekayaan bawah lautnya juga menjadikannya spot yang potensial untuk snorkeling, di mana pengunjung dapat menyaksikan keanekaragaman terumbu karang dan biota laut yang masih sangat terjaga.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Tanjung Datu-20250914T074854Z-1-001/Tanjung Datu/index.html' 
+            },
+            { 
+                title: 'Teluk Atong Bahari', 
+                description: 'Teluk Atong Bahari menawarkan panorama pesisir yang khas dengan teluknya yang tenang, dihiasi oleh formasi bebatuan granit besar yang artistik. Daya tarik utamanya adalah jembatan kayu yang menjorok ke arah laut dan sebuah gazebo di ujungnya, menjadi spot foto ikonik dengan latar belakang perairan teluk yang biru kehijauan. Suasananya yang damai menjadikan tempat ini pilihan tepat untuk menenangkan pikiran, memancing, atau sekadar duduk santai menikmati keindahan alam.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Teluk Atong Bahari-20250914T074854Z-1-001/Teluk Atong Bahari/index.html' 
+            },
+            { 
+                title: 'Tugu Pancasila', 
+                description: 'Berdiri kokoh di area perbatasan, Tugu Pancasila di Desa Temajuk bukan sekadar monumen biasa, melainkan sebuah lambang kedaulatan dan semangat nasionalisme. Tugu ini dibangun sebagai penegas identitas bangsa di beranda depan negara. Lokasinya yang strategis seringkali menjadi latar belakang bagi berbagai acara komunitas dan menjadi titik yang wajib dikunjungi wisatawan untuk berfoto, sebagai tanda bahwa mereka telah menjejakkan kaki di salah satu ujung utara Indonesia.', 
+                image: './resources/logo/pantai.png', 
+                link:'/asset/Tugu Pancasila-20250914T061935Z-1-001/Tugu Pancasila/index.html' 
+            },
             ];
 
             // DOM
